@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+
+    <!-- Exercicio 1  
+<script>
+
+        let n1 = prompt("Digite o primeiro número:");
+
+        let n2 = prompt("Digite o segundo número:");
+
+        let n3 = prompt("Digite o terceiro número:");
+
+        if (n1 > 0 && n2 > 0 && n3 > 0) {
+            alert("Todos os números são positivos!");
+        } else if (n1 < 0 && n2 > 0 && n3 > 0) {
+            alert("Apenas o primeiro número é negativo ou zero!");
+        } else if (n1 > 0 && n2 < 0 && n3 > 0) {
+            alert("Apenas o segundo número é negativo ou zero!");
+        } else if (n1 > 0 && n2 > 0 && n3 < 0) {
+            alert("Apenas o terceiro número é negativo ou zero!");
+        } else if (n1 > 0 && n2 < 0 && n3 < 0) {
+            alert("Apenas o primeiro número é positivo!");
+        } else if (n1 < 0 && n2 > 0 && n3 < 0) {
+            alert("Apenas o segundo número é positivo!");
+        } else if(n1 < 0 && n2 < 0 && n3 > 0) {
+            alert("Apenas o terceiro número é positivo!");
+        } else{
+            alert("Todos os números são negativos!");
+        }
+
+    </script>
+     -->
+
+
+    <!-- Exercicio 2 
+      <script>
+
+        let n1 = prompt("Digite o primeiro número:");
+
+        let n2 = prompt("Digite o segundo número:");
+
+        let conta = prompt("Agora escolha e digite umas das operações matemáticas\n(Escreva como está aqui)\nsoma, subtração, multiplicação ou divisão.");
+
+        n1 = Number(n1)
+        n2 = Number(n2)
+
+        if(conta == "soma"){
+            let final = n1 + n2
+            alert(`O resultado da soma de ${n1} e ${n2} é: ${final}`)
+        } else if(conta == "subtração"){
+            let final = n1 - n2
+            alert(`O resultado da subtração de ${n1} e ${n2} é: ${final}`)
+        } else if(conta == "multiplicação"){
+            let final = n1 * n2
+            alert(`O resultado da multiplicação de ${n1} e ${n2} é: ${final}`)
+        } else if(conta == "divisão"){
+            let final = n1 / n2
+            alert(`O resultado da divisão de ${n1} e ${n2} é: ${final}`)
+        }
+    </script>
+    -->
+
+
+    <!-- Exercicio 3  
+     <script>
+
+        let n1 = prompt("Digite um número:");
+
+        if(n1 >= 50 || n1 <= 100){
+            alert("Parabéns! este número está entre 50 e 100")
+        }else{
+            alert("Oh não! este número não está entre 50 e 100")
+        }
+
+    </script>
+    -->
+
+
+    <!-- Exercicio 4  
+      <script>
+
+        let valorCompra = prompt("Qual o valor total da compra?");
+
+        if(valorCompra > 100){
+
+            let valorPagar = valorCompra - (valorCompra * 0.10)
+            alert(`10% de desconto aplicado, valor a pagar: ${valorPagar}`)
+        }else{
+
+            alert(`Valor a pagar: ${valorCompra}`)
+        }
+
+    </script>
+
+    -->
+
+
+    <!-- Exercicio 5  
+      <script>
+
+        let altura = prompt("Qual a sua altura em cm?");
+
+        if(altura < 150){
+            alert("Baixo kkk")
+        }else if (altura >= 150 || altura <= 180){
+            alert("Na média")
+        }else{
+            alert("Alto em pai")
+        }
+
+    </script>
+    -->
+
+
+    <!-- Exercicio 6  
+       <script>
+        let senha = "1234";
+        prompt("Qual a senha para entrar na conta?");
+
+        if(senha == "1234"){
+            alert("Acertou!");
+        }else{
+            alert("Errou!");
+        }
+
+    </script>
+    -->
+
+
+    <!-- Exercicio 7  
+     <script>
+        let numero = prompt("Digite um número:");
+
+        if(numero % 2 === 0){
+            alert("Este número é par.");
+        }else if(numero % 2 === 1 || numero >= 50){
+            alert("Número especial.");
+        }else{
+            ("Este número é ímpar");
+        }
+    </script>
+    -->
+
+
+    <!-- Exercicio 8  
+     <script>
+
+        let idade = prompt("Quantos anos vc tem?");
+
+        if(idade <= 12){
+            alert("Criança")
+        }else if (idade >= 13 || idade <= 17){
+            alert("Adolescente")
+        }else if (idade >= 18 || idade <= 64){
+            alert("Adulto")
+        }else{
+            alert("Velho")
+        }
+
+    </script>
+    -->
+
+
+    <!-- Exercicio 9  
+      <script>
+
+        let numero = 3;
+        prompt("Qual a némero para entrar na conta?");
+
+        if (numero == 3) {
+            alert("Acertou!");
+        } else {
+            alert("Errou!");
+        }
+
+    </script>
+    -->
+
+
+    <!-- Exercicio 10  
+      <script>
+
+        let nota = prompt("Digite uma nota de desempenho (0 a 10):");
+
+        if(nota >= 0 || nota <=4){
+            alert("Ruim")
+        }else if (nota >= 5 || nota <= 7){
+            alert("Bom")
+        }else{
+            alert("Excelente")
+        }
+    </script>
+    -->
+
+
+    <!-- Desafio 
+     
+    <script>
+        let nome = prompt("Digite o nome:")
+
+        let idade = prompt("Digite sua idade:")
+
+        let pontProva = prompt("Qual a pontuação da prova?")
+
+        let pontEntrevista = prompt("Qual a pontuação da entrevista")
+
+        if(idade < 18){
+            alert(`Desculpe, ${nome}, você não atende aos critérios de idade.`)
+        } else if(pontProva < 7){
+            alert(`Infelizmente, ${nome}, sua pontuação na Prova Técnica foi insuficiente.`)
+        }else if(pontEntrevista < 6){
+            alert(`Infelizmente, ${nome}, sua pontuação na Entrevista foi insuficiente.`)
+        }else if(pontProva > 8){
+            alert("Você é Altamente Qualificado!")
+        }else{
+            alert(`Parabéns, ${nome}! Você foi aprovado para a vaga.`)
+        }
+    </script>
+    -->
+    
+
+    
+</body>
+</html>
