@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Interativo</title>
+</head>
+<body id="corpo" style="background-color: black">
+
+
+    <h1 id="titulo">Olá, mundo!</h1>
+    
+    
+
+    <script>
+        nome = prompt("Qual o seu nome?")
+document.getElementById("titulo").innerText = "Bem-vindo! " + nome;
+
+document.getElementById("corpo").innerHTML += "<h2> eu sou um h2 inserido pelo javascript </h2>";
+
+    </script>
+
+
+</body>
+</html>
+
